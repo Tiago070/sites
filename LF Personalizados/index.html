@@ -6,6 +6,7 @@
         <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
         <title>LF Presentes Personalizados</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
     </head>
     <body>
         <header>
@@ -78,87 +79,31 @@
 
         <hr>
 
-        <section id="produtos">
-            <div class="carousel">
-                <h2>Conheça alguns dos nossos produtos</h2>
-                <div class="carousel-container">
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img1.jpg" alt="Produto 1">
-                        <h3>Produto 1</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img2.jpg" alt="Produto 2">
-                        <h3>Produto 2</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img3.jpg" alt="Produto 3">
-                        <h3>Produto 3</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img4.jpg" alt="Produto 4">
-                        <h3>Produto 4</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img5.jpg" alt="Produto 5">
-                        <h3>Produto 5</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img6.jpg" alt="Produto 6">
-                        <h3>Produto 6</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img7.jpg" alt="Produto 7">
-                        <h3>Produto 7</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img8.jpg" alt="Produto 8">
-                        <h3>Produto 8</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img9.jpg" alt="Produto 9">
-                        <h3>Produto 9</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img10.jpg" alt="Produto 10">
-                        <h3>Produto 10</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img11.jpg" alt="Produto 11">
-                        <h3>Produto 11</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img12.jpg" alt="Produto 12">
-                        <h3>Produto 12</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img13.jpg" alt="Produto 13">
-                        <h3>Produto 13</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img14.jpg" alt="Produto 14">
-                        <h3>Produto 14</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img15.jpg" alt="Produto 15">
-                        <h3>Produto 15</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img16.jpg" alt="Produto 16">
-                        <h3>Produto 16</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img17.jpg" alt="Produto 17">
-                        <h3>Produto 17</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img18.jpg" alt="Produto 18">
-                        <h3>Produto 18</h3>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="assets/imagens/img19.jpg" alt="Produto 19">
-                        <h3>Produto 19</h3>
-                    </div>
+        <section id="carrossel">
+            <div class="carrossel-container">
+                <button class="carrossel-btn left" onclick="moveCarrossel(-1)">&#10094;</button>
+                <div class="carrossel-images">
+                    <img src="assets/imagens/img1.jpg" alt="Imagem 1">
+                    <img src="assets/imagens/img2.jpg" alt="Imagem 2">
+                    <img src="assets/imagens/img3.jpg" alt="Imagem 3">
+                    <img src="assets/imagens/img4.jpg" alt="Imagem 4">
+                    <img src="assets/imagens/img5.jpg" alt="Imagem 5">
+                    <img src="assets/imagens/img6.jpg" alt="Imagem 6">
+                    <img src="assets/imagens/img7.jpg" alt="Imagem 7">
+                    <img src="assets/imagens/img8.jpg" alt="Imagem 8">
+                    <img src="assets/imagens/img9.jpg" alt="Imagem 9">
+                    <img src="assets/imagens/img10.jpg" alt="Imagem 10">
+                    <img src="assets/imagens/img11.jpg" alt="Imagem 11">
+                    <img src="assets/imagens/img12.jpg" alt="Imagem 12">
+                    <img src="assets/imagens/img13.jpg" alt="Imagem 13">
+                    <img src="assets/imagens/img14.jpg" alt="Imagem 14">
+                    <img src="assets/imagens/img15.jpg" alt="Imagem 15">
+                    <img src="assets/imagens/img16.jpg" alt="Imagem 16">
+                    <img src="assets/imagens/img17.jpg" alt="Imagem 17">
+                    <img src="assets/imagens/img18.jpg" alt="Imagem 18">
+                    <img src="assets/imagens/img19.jpg" alt="Imagem 19">
                 </div>
+                <button class="carrossel-btn right" onclick="moveCarrossel(1)">&#10095;</button>
             </div>
         </section>
 

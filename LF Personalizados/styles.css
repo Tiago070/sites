@@ -179,7 +179,7 @@ footer {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -210,7 +210,7 @@ nav button {
     padding: 10px 20px;
     cursor: pointer;
 }
-.hero {
+.banner {
     position: relative;
     text-align: left;
     color: white;
@@ -219,12 +219,12 @@ nav button {
     width: 100%;
     height: auto;
 }
-.hero-text {
+.banner h1 {
     position: absolute;
     top: 20px;
     left: 20px;
 }
-.hero-text button {
+.banner button {
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -251,19 +251,58 @@ nav button {
     width: 100%;
     height: auto;
 }
-.carousel {
-    padding: 20px;
-    text-align: center;
-}
-.carousel-container {
-    display: flex;
-    overflow-x: scroll;
-}
-.carousel-slide {
-    min-width: 300px;
-    margin: 0 10px;
-}
-.carousel-slide img {
+
+#carrossel {
+    position: relative;
     width: 100%;
-    height: auto;
+    overflow: hidden;
+}
+
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-images img {
+    width: 33.33%;
+    flex-shrink: 0;
+    margin: 30px;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carrossel-btn.left {
+    left: 10px;
+}
+
+.carrossel-btn.right {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .carrossel-images img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrossel-images img {
+        width: 100%;
+    }
 }
