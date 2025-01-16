@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
         <title>LF Presentes Personalizados</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
@@ -25,9 +26,7 @@
             <div class="banner">
                 <h1>Supreendendo pessoas especiais com presentes especiais</h1>
                 <picture>
-                    <source media="max-width=750px" srcset="assets/background.webp" type="image/webp">
-                    <source media="max-width=1050px" srcset="assets/background.jpg" type="image/jpeg">
-                    <img src="assets/background.jpg" alt="Background" class="background-image">
+                    <img src="assets/banner.jpg" alt="Background" class="background-image">
                 </picture>
                 <button>WhatsApp</button>
             </div>
@@ -38,16 +37,40 @@
                 <h2>Venha conhecer algumas possibilidades de presentes personalizados!</h2>
                 <div class="feature-boxes">
                     <div class="feature-box">
-                        <img src="assets/categoria1.jpg" alt="Categoria 1">
-                        <h3>Categoria 1</h3>
+                        <img src="assets/icons/recipientes.png" alt="Categoria 1">
+                        <h3>Recipientes</h3>
                     </div>
                     <div class="feature-box">
-                        <img src="assets/categoria2.jpg" alt="Categoria 2">
-                        <h3>Categoria 2</h3>
+                        <img src="assets/icons/vestuario.png" alt="Categoria 2">
+                        <h3>Vestuário</h3>
                     </div>
                     <div class="feature-box">
-                        <img src="assets/categoria3.jpg" alt="Categoria 3">
-                        <h3>Categoria 3</h3>
+                        <img src="assets/icons/agendas.png" alt="Agendas">
+                        <h3>Agendas</h3>
+                    </div>
+                    <div class="feature-box">
+                        <img src="assets/icons/fotos.png" alt="Fotos">
+                        <h3>Fotos</h3>
+                    </div>
+                    <div class="feature-box">
+                        <img src="assets/icons/decoracoes.png" alt="Decorações">
+                        <h3>Decorações</h3>
+                    </div>
+                    <div class="feature-box">
+                        <img src="assets/icons/box.png" alt="Box">
+                        <h3>Box</h3>
+                    </div>
+                    <div class="feature-box">
+                        <img src="assets/icons/quadros.png" alt="Quadros">
+                        <h3>Quadros</h3>
+                    </div>
+                    <div class="feature-box">
+                        <img src="assets/icons/globos.png" alt="Globos">
+                        <h3>Globos</h3>
+                    </div>
+                    <div class="feature-box">
+                        <img src="assets/icons/adesivos.png" alt="Adesivos">
+                        <h3>Adesivos</h3>
                     </div>
                 </div>
             </div>
@@ -181,255 +204,5 @@
             <p>© 2024 IF Mais Empreendedor. Todos os direitos reservados</p>
         </footer>
 
-        <style>
-            footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            }
-            .footer-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            }
-            footer button {
-            background-color: #ff6600;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            }
-
-            #contato {
-                background-color: #d3d3d3;
-                padding: 20px;
-            }
-            .contato-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-            }
-            .contato-esquerda, .contato-direita {
-                flex: 1;
-                padding: 20px;
-            }
-            .contato-esquerda img, .contato-direita img {
-                vertical-align: middle;
-                margin-right: 10px;
-            }
-            @media (max-width: 768px) {
-                .contato-esquerda, .contato-direita {
-                    flex: 100%;
-                    text-align: center;
-                }
-            }
-
-            #depoimentos {
-                background-color: #e0e0e0;
-                padding: 20px;
-                text-align: center;
-            }
-            .depoimentos-container h2 {
-                margin-bottom: 20px;
-            }
-            .depoimentos-fotos {
-                display: flex;
-                justify-content: center;
-                gap: 10px;
-                flex-wrap: wrap;
-            }
-            .depoimentos-fotos img {
-                width: 22%;
-                height: auto;
-            }
-            @media (max-width: 768px) {
-                .depoimentos-fotos img {
-                    width: 45%;
-                }
-            }
-            @media (max-width: 480px) {
-                .depoimentos-fotos img {
-                    width: 100%;
-                }
-            }
-
-            #galeria {
-                background-color: #d3d3d3;
-                padding: 20px;
-                text-align: center;
-            }
-            .galeria-container h2 {
-                margin-bottom: 20px;
-            }
-            .galeria-fotos {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
-            }
-            .galeria-fotos img {
-                width: 100%;
-                height: auto;
-            }
-            @media (max-width: 768px) {
-                .galeria-fotos {
-                    grid-template-columns: repeat(2, 1fr);
-                }
-            }
-            @media (max-width: 480px) {
-                .galeria-fotos {
-                    grid-template-columns: 1fr;
-                }
-            }
-
-            #sobre-nos {
-                padding: 20px;
-                text-align: center;
-            }
-            .sobre-nos-content {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .sobre-nos-img {
-                border-radius: 50%;
-                width: 150px;
-                height: 150px;
-            }
-            .sobre-nos-gallery {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-            .sobre-nos-gallery-img {
-                border-radius: 50%;
-                width: 100px;
-                height: 100px;
-            }
-            .sobre-nos-gallery-img:nth-child(1) {
-                margin-bottom: 10px;
-            }
-            .sobre-nos-gallery-img:nth-child(2),
-            .sobre-nos-gallery-img:nth-child(3) {
-                margin-top: 10px;
-            }
-
-            #surpresa {
-                background-color: #f0f0f0;
-                padding: 20px;
-                text-align: center;
-            }
-            .surpresa-container h2 {
-                margin-bottom: 20px;
-            }
-            .surpresa-fotos {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                flex-wrap: wrap;
-            }
-            .surpresa-fotos img {
-                width: 30%;
-                height: auto;
-            }
-            @media (max-width: 768px) {
-                .surpresa-fotos img {
-                    width: 80%;
-                }
-            }
-
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px 20px;
-                background-color: #333;
-                color: white;
-            }
-            nav ul {
-                list-style: none;
-                display: flex;
-                gap: 20px;
-            }
-            nav ul li {
-                display: inline;
-            }
-            nav ul li a {
-                color: white;
-                text-decoration: none;
-            }
-            nav button {
-                background-color: #ff6600;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                cursor: pointer;
-            }
-            .hero {
-                position: relative;
-                text-align: left;
-                color: white;
-            }
-            .background-image {
-                width: 100%;
-                height: auto;
-            }
-            .hero-text {
-                position: absolute;
-                top: 20px;
-                left: 20px;
-            }
-            .hero-text button {
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                background-color: #ff6600;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                cursor: pointer;
-            }
-            .features {
-                padding: 20px;
-                text-align: center;
-            }
-            .feature-boxes {
-                display: flex;
-                justify-content: space-around;
-            }
-            .feature-box {
-                width: 18%;
-                text-align: center;
-            }
-            .feature-box img {
-                width: 100%;
-                height: auto;
-            }
-            .carousel {
-                padding: 20px;
-                text-align: center;
-            }
-            .carousel-container {
-                display: flex;
-                overflow-x: scroll;
-            }
-            .carousel-slide {
-                min-width: 300px;
-                margin: 0 10px;
-            }
-            .carousel-slide img {
-                width: 100%;
-                height: auto;
-            }
-        </style>
     </body>
 </html>
