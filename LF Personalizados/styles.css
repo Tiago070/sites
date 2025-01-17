@@ -270,9 +270,10 @@ nav button {
 }
 
 .carrossel-images img {
-    width: 33.33%;
+    width: 18.67%; /* 26.67% - 30% */
     flex-shrink: 0;
-    margin: 30px;
+    margin: 0 5px; /* Espaçamento de 10px entre as imagens */
+    border-radius: 30px; /* Bordas arredondadas */
 }
 
 .carrossel-btn {
@@ -297,12 +298,12 @@ nav button {
 
 @media (max-width: 768px) {
     .carrossel-images img {
-        width: 50%;
+        width: 28%; /* 40% - 30% */
     }
 }
 
 @media (max-width: 480px) {
     .carrossel-images img {
-        width: 100%;
+        width: 56%; /* 80% - 30% */
     }
 }
